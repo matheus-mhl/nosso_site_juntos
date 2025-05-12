@@ -1,0 +1,58 @@
+body{ /*corpo da página*/
+    background-color: aqua;
+}
+
+#principal{ /*definindo div principal com "#"*/
+    width: 1280px; /*Largura*/
+    border: 2px solid black; /*criando "caixa" para visualizar a separação de diferentes partes do site*/
+}
+
+header{
+    height: 143px;
+    /*botando plano de fundo do cabeçaçho utilizando uma imagem. */
+    background-image: url("../Imagens/bck-fundo.jpg"); /*IMPORTANTE: utilize".." para fazer o VScode entender que você quer sair da pasta do "index.html" para pegar a imagem desejada na pasta "Imagens"*/
+    
+    /*ANOTAÇÕES ABAIXO de comandos para manusear repetição, tamanho e posição da imagem*/
+    
+    /*background-repeat: no-repeat; /*este código serve para PREVENIR que a imagem se repita para preencher as dimensões definidas*/
+    /*background-size: cover; /*ordenando que a imagem do background cubra o espaço defindo do "header" */
+    /*background-position: right; /*definir posição da imagem*/
+
+    display: flex; /*é utilizado para transformar um elemento em um "flex container", permitindo que você controle o layout dos seus elementos filhos de forma mais flexível e responsiva*/
+        justify-content: start; /*alinhamento no eixo principal*/
+        align-items: center; /*alinhamento no eixo transversal*/
+    
+}
+
+header img { /*utilizando herança para especificar imagem. Essa téncina não funcionaria no caso de multiplas imagens. No caso de multiplas imagens utiizar: "id" ou "class", no "index.html" para especificar imagem*/
+    margin: 0px 12px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    /* border: 2px solid red; definindo tamanho grossura e cor da borda */
+    width: 700px; /*Largura da borda*/
+    margin-left: 54px; /*criando margem para a esquerda*/
+}
+
+ul {
+    display: flex;
+    list-style-type: none; /*remover as bolinhas (que separam os tópicos da lista) */
+    justify-content: space-between; /*organizar contúdo da "ul(unordered list)". "space-around: deixa o contéudo espaçado"*/
+}
+
+ul li a { /*caminho necessário para alterar os elementos dentro da "ul"(ul>li>a)*/
+    color:black;
+    text-decoration: none; /*removendo decoração (nesse caso o sublinhado) do link "ul li a"*/
+    font-size: 16px;
+    font-weight: bold;
+    background-color: aquamarine;
+    padding: 8px 16px; /*estabelecendo distancia verticalmente e horizontalmente entre os elementos*/
+    border-radius: 6px; /*arredondando as bordas*/
+    
+    
+}
