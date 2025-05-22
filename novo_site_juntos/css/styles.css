@@ -19,8 +19,8 @@ header{
     /*background-position: right; /*definir posição da imagem*/
 
     display: flex; /*é utilizado para transformar um elemento em um "flex container", permitindo que você controle o layout dos seus elementos filhos de forma mais flexível e responsiva*/
-        justify-content: start; /*alinhamento no eixo principal*/
-        align-items: center; /*alinhamento no eixo transversal*/
+        justify-content: start; /*alinhamento no eixo principal(HORIZONTAL: eixo X)*/
+        align-items: center; /*alinhamento no eixo transversal(VERTICAL/COLUNA: eixo Y)*/
     
 }
 
@@ -55,4 +55,41 @@ ul li a { /*caminho necessário para alterar os elementos dentro da "ul"(ul>li>a
     border-radius: 6px; /*arredondando as bordas*/
     
     
+}
+
+ul li a:hover{ /*Função usada para mudar características da página quando o cursor do mouse passa por cima (nesse caso estamos modificando os tópicos de navegação do "nav")*/
+    background-color: blueviolet; /*muda a cor do plano de fundo quando o cursor passar por cima*/
+    color: white; /*muda a cor da plavra para branco*/
+    text-decoration: underline; /*sublinha o texto*/
+}
+/*aqui começa o meio do site(MAIN SECTION)*/
+
+section{
+    width: ;/*não é necessário botar tamanho ou nem mesmo o próprio "width", pois ele já está herdando suas dimensçoes da section anterior, mas seria 1280px*/
+    background-color: indianred;
+    display: flex;
+}
+
+#primeiro_destaque{
+    width: 900px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#textos{
+    margin-left: 18px;
+}
+
+h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#destaque_azul_claro{
+    width: 880px; /*o valor é 880 por causa do "padding" (na linha 93), caso o contrário a página não ficaria simétrica*/
+    background-color: aqua;
+    display: flex;
+    padding: 10px; /*sempre ajustar o "width" e o "height", dependendo do valor do "padding"*/
 }
