@@ -1,5 +1,7 @@
 body{ /*corpo da página*/
     background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
 }
 
 #principal{ /*definindo div principal com "#"*/
@@ -52,7 +54,7 @@ ul li a { /*caminho necessário para alterar os elementos dentro da "ul"(ul>li>a
     font-weight: bold;
     background-color: aquamarine;
     padding: 8px 16px; /*estabelecendo distancia verticalmente e horizontalmente entre os elementos*/
-    border-radius: 6px; /*arredondando as bordas*/
+    border-radius: 18px; /*arredondando as bordas*/
     
     
 }
@@ -65,14 +67,18 @@ ul li a:hover{ /*Função usada para mudar características da página quando o 
 /*aqui começa o meio do site(MAIN SECTION)*/
 
 section{
-    width: ;/*não é necessário botar tamanho ou nem mesmo o próprio "width", pois ele já está herdando suas dimensçoes da section anterior, mas seria 1280px*/
-    background-color: indianred;
+    /* "width:" não é necessário botar tamanho ou nem mesmo o próprio "width", pois ele já está herdando suas dimensçoes da section anterior, mas seria 1280px*/
+    background-color: rgb(216, 146, 251);
     display: flex;
+    /*margin: 15px 0px;*/
+    border-top: 12px solid white;
+    border-bottom: 12px solid white;
+    padding: 20px; /*espaçamento para desgrudar dos cantos*/
 }
 
 #primeiro_destaque{
     width: 900px;
-    border: 2px solid black;
+    /*border: 2px solid black;(CAIXA PRETA para melhorar visualização durante desenvolvimento do site)*/
     display: flex;
     justify-content: start;
     align-items: center;
@@ -92,4 +98,52 @@ h3{
     background-color: aqua;
     display: flex;
     padding: 10px; /*sempre ajustar o "width" e o "height", dependendo do valor do "padding"*/
+    border: 0px;
+}
+
+aside {
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+}
+h4 {
+    color: white;
+    text-transform: uppercase; /*Coloca o texto em caixa alta*/
+}
+
+aside p {
+    color: white;
+    text-align: center; /*para alinhar o texto pelo centro/justificado/à direita/à esquerda...*/
+    margin: 0px 18px;
+    line-height: 22px;
+}
+
+aside a {
+    color: black;
+    text-decoration: none; /*Vai tirar o estilo "Link" do cabeçalho*/
+    font-size: 18px;
+    background-color: aquamarine;
+    padding: 2px 16px; /*Cria uma caixa de mensagem para espaçar eles do texto*/
+    border-radius: 15px; /*Arredonda as bordas*/
+    margin-bottom: 20px; /*Margem serve para espaçar além do limite. ela desgrudou o botão da beirada*/
+    font-weight: bold;
+}
+
+aside a:hover {
+    background-color: purple;
+    color: white;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: lightseagreen;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
